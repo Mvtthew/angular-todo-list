@@ -1,17 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodosComponent } from './components/todos/todos.component';
-import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import { HomePageComponent } from './views/home-page/home-page.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { AboutComponent } from './views/about/about.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { TodoComponent } from './components/todo-list/todo/todo.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		TodosComponent,
-		TodoItemComponent
+		HomePageComponent,
+		HeaderComponent,
+		AboutComponent,
+		TodoListComponent,
+		TodoComponent
 	],
 	imports: [
 		BrowserModule,
