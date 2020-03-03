@@ -6,10 +6,11 @@
 				placeholder="Create new task"
 				required
 				[(ngModel)]="title"
+				#ngModel="ngModel"
 			>
 			<button
 				class="btn btn-sm btn-outline-danger"
-				(click)="add()"
+				(click)="add(ngModel)"
 			>
 				<i class="bx bx-message-square-add"></i>
 			</button>
