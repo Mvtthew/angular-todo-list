@@ -25,7 +25,7 @@ export class TodoListComponent implements OnInit {
 	}
 
 	addTodo(todo: Todo): void {
-		// Update on UI
+		// Update on UI (normally I'll pull list to get id etc)
 		this.todoList.unshift(todo);
 		// Send POST request
 		this.todoService.addTodo(todo).subscribe();
