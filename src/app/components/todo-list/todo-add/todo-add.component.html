@@ -1,0 +1,18 @@
+<div class="card mb-3 border-0 shadow">
+	<div class="card-body p-0">
+		<div class="title p-3 d-flex align-items-center">
+			<input
+				class="mr-4"
+				placeholder="Create new task"
+				required
+				[(ngModel)]="title"
+			>
+			<button
+				class="btn btn-sm btn-outline-danger"
+				(click)="add()"
+			>
+				<i class="bx bx-message-square-add"></i>
+			</button>
+		</div>
+	</div>
+</div>

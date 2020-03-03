@@ -1,9 +1,11 @@
 // Bootstrap
-$body-bg: #889e81;
-$body-color: #e2e2d8;
+$body-bg: #252525;
+$body-color: #a8a8a4;
 
 $enable-rounded: false;
 $enable-shadows: true;
+
+$danger: #af0404;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 

@@ -17,4 +17,18 @@ export class TodoListComponent implements OnInit {
 		this.todoService.getTodos().subscribe(todos => this.todoList = todos);
 	}
 
+	deleteTodo(todo: Todo): void {
+		// Delete on UI
+		this.todoList = this.todoList.filter(v => v.id != todo.id);
+		// Send DELETE request
+		this.todoService.deleteTodo(todo).subscribe();
+	}
+
+	addTodo(todo: Todo): void {
+		// Update on UI
+		this.todoList.unshift(todo);
+		// Send POST request
+		this.todoService.addTodo(todo).subscribe();
+	}
+
 }
