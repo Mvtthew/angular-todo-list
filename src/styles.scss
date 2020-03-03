@@ -1,1 +1,11 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+// Bootstrap
+$body-bg: #889e81;
+$body-color: #e2e2d8;
+
+$enable-rounded: false;
+$enable-shadows: true;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Boxicons
+@import "../node_modules/boxicons/css/boxicons.min.css";
